@@ -1,15 +1,10 @@
 require 'pry'
 
 def prime?(number)
+  range = (2..number-1).to_a
   if number < 2 
     false 
-    elsif number > 2 
-      range = (2..(number-1)).to_a
-      range.each do |numbers|
-        if number % numbers == 0 
-          false 
-        else
-          true 
+    elsif range.each {|integer| number % integer
         end
     end
   end
